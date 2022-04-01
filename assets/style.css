@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background: #242424;
+    font-family: 'Work Sans' , sans-serif;
+    font-weight: 300;
+}
+/*this portion is for the apis*/
+.panels{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+.panel1{
+    position: relative;
+    margin: 20px;
+}
+
+#DineIn{
+    display:block;
+    height: auto;
+    border-radius: 12px;
+    width: 400px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width:400px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: antiquewhite;
+    border-radius: 12px;    
+}
+
+.panel1:hover .overlay {
+    opacity: .75;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+.panel2{
+    position: relative;
+    margin: 20px;
+}
+
+#DineOut{
+    display:block;
+    height: auto;
+    border-radius: 12px;
+    width: 400px;
+}
+.overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width:400px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: antiquewhite;
+    border-radius: 12px;    
+}
+
+.panel2:hover .overlay2 {
+    opacity: .75;
+}
+.text2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}  
