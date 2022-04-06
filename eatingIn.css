@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+}
+
+:root {
+    background-color: goldenrod;
+}
+
+body{
+    font-size: 12px;
+    line-height: 1.6px;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    padding: 0;
+}
+
+.header {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container{
+    min-height: 150vh;
+}
+
+.meal{
+    max-width: 1300px;
+    padding: 10px;
+    margin: auto;
+    background: white;
+    text-align: center;
+}
+
+.search{
+    margin: 36px
+}
+
+.search cite{
+    font-size: 12px;
+}
+
+.mealBox{
+    margin: 20px;
+    display:flex;
+    align-items: stretch;
+}
+
+.searchBar{
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.searchButton{
+    background-color: goldenrod;
+    border-radius: 100px;
+    color: white;
+}
+
+.searchButton:hover{
+    background: white;
+    color: goldenrod;
+}
+
+.Result{
+    margin: 10px 0 0 0;
+}
+
+.mealItem{
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px;
+}
+
+.mealImage img{
+    width: 100%;
+    display: block;
+    border-radius: 100px;
+}
+
+.nameMeal, h4{
+    font-size: 18px;
+}
+
+.recipeButton{
+    text-decoration: none;
+    color: white;
+    background: goldenrod;
+    display: block;
+    width: 180px;
+    margin: 16px auto;
+    border-radius: 100px;
+}
+
+.recipeButton:hover{
+    background: white;
+    color: goldenrod;
+}
+
+
+
+@media screen and (min-width: 768px){
+    #recipes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+}
