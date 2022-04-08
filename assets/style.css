@@ -4,89 +4,161 @@ body {
     font-family: 'Work Sans' , sans-serif;
     font-weight: 300;
 }
+
+/* navbar */
+header {
+    background: antiquewhite;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+nav{
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 20px;
+    position: relative;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: "Monaco";
+}
+
+nav a:hover{
+    color:#444
+}
+
+nav a::before{
+    content: " ";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+#logo{
+    height: 45px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /*this portion is for the apis*/
 .panels{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     margin: 0 auto;
 }
-.panel1{
+.panel1,
+.panel2 {
     position: relative;
     margin: 20px;
 }
 
-#DineIn{
+#DineIn,
+#DineOut {
     display:block;
     height: auto;
     border-radius: 12px;
-    width: 400px;
+    width: 600px;
 }
 
-.overlay{
+.overlay, 
+.overlay2 {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;
-    width:400px;
+    width:600px;
     opacity: 0;
     transition: .5s ease;
     background-color: antiquewhite;
     border-radius: 12px;    
 }
 
-.panel1:hover .overlay {
-    opacity: .75;
-}
-.text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-}
-
-.panel2{
-    position: relative;
-    margin: 20px;
-}
-
-#DineOut{
-    display:block;
-    height: auto;
-    border-radius: 12px;
-    width: 400px;
-}
-.overlay2{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width:400px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: antiquewhite;
-    border-radius: 12px;    
-}
-
+.panel1:hover .overlay,
 .panel2:hover .overlay2 {
     opacity: .75;
 }
-.text2{
+.text, 
+.text2 {
     position: absolute;
     top: 50%;
     left: 50%;
 transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
+color: black;
 }
 
+.text:active,
+.text2:active {
+    color: white;
+    text-decoration: underline;
+}
+/* Contact cards */
+#header {
+    text-align: center;
+    font-family: "Monaco";
+    color: white;
+}
 
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacts{
+    list-style: none;
+    display:block;
+    height: auto;
+    border-radius: 12px;
+    width: auto;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+.contacts h2{
+    text-decoration: underline;
+}
+
+/* overall */
 html{
     scroll-behavior: smooth;
 }  
