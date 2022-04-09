@@ -1,7 +1,7 @@
 # Team 1 Group Project: InorOut
 
 ## Overview:
-As a group we have collected data from outside sources to seekout some common reoccuring problems in everyday life. We noticed that in several household cases there's always a dispute on deciding "what to eat?". As developers we have tackled on this task by creating a website to allow users to either find nearby restaurants based off of a series of questions or discovering new recipes with common ingrediants at home!
+As a group we have collected data from outside sources to seek out some common recurring problems in everyday life. We noticed that in several household cases there's always a dispute on deciding "what to eat?". As developers we have tackled on this task by creating a website to allow users to either find nearby restaurants based off of a series of questions or discovering new recipes with common ingredients at home!
 
 When developing the application our group has set our MVP (Minimum Viable Product), based on two key main factors. First was what is the purpose of the app and how users accessible will it be, then what are our limitations on our Apis. 
 
