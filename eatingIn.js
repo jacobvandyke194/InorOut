@@ -4,9 +4,11 @@ const mealDetails = document.querySelector('.mealDescription');
 const searchButton = document.getElementById('searchButton');
 const listedMeals = document.getElementById('recipes');
 const closeButton = document.getElementById('closeButton');
+const mealModal = document.querySelector('.mealContent');
 //BELOW IS EVENT LISTENERS TO SEARCH, CLOSE, ETC.
 searchButton.addEventListener('click', activatemealList);
 listedMeals.addEventListener('click', getRecipe);
+closeButton.addEventListener('click', closeModal);
 
 
 
@@ -65,12 +67,9 @@ function recipeModal(meal){
     meal = meal[0];
     let html = `
     <div class = "mealContent">
-        <button class = "closeButton" type = "button" id="closeButton">
-                        EXIT
-                    </button>
         <h3 class = "recipeTitle">${meal.strMeal}</h3>
         <p class = "mealType">${meal.strCategory}</p>
-        <div class = "recipeDirection">
+        <div class = "recipeDirection" id = "recipeDirection">
             <h4>Directions:</h4>
             <p>${meal.strInstructions}</p>
         </div>
@@ -84,10 +83,9 @@ function recipeModal(meal){
 `;
 
 mealDetails.innerHTML = html;
-mealDetails.classList.add('showRecipe');
+// mealDetails.classList.add('showRecipe');
 mealDetails.style.display = "block"
 
 
 
 }
-
