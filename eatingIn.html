@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eating In!</title>
+    <title>Eating In?</title>
     <link rel="stylesheet" href="./eatingIn.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 <!-- Search bar for different recipes corresponding to ingredient input -->
                 <div class = "mealBox">
                     <input type = "text" class = "searchBar" placeholder="What ingredients do you have at home?" id = "searchInput">
-                    <button type = "submit" class="searchButton" id="Button">
+                    <button type = "submit" class="searchButton" id="searchButton">
                         <i class = "search">Recipes!</i>
                     </button>
                 </div>
@@ -24,7 +24,7 @@
             <div class = "Result">
                 <h2 class = "header">Recipes:</h2>
                 <div id = "recipes">
-                    <div class = "mealItem">
+                    <!-- <div class = "mealItem">
                         <div class = "mealImage">
                           <img src="./eatingoutAssets/spaghetti.jpg" alt = "spaghetti">  
                         </div>
@@ -59,29 +59,32 @@
                             <h4>Banana Bread:</h4>
                             <a href = "#" class = "recipeButton">Recipe</a>
                         </div>
+                    </div> -->
+                </div>                
+            </div>
+
+<!-- button to close recipe seelcted -->
+            <div class = "mealDescription">
+                <!-- <button class = "closeButton" type = "button" id="closeButton">
+                    EXIT
+                </button> -->
+
+<!-- descriptions of meals -->
+                <div class = "mealContent">
+                    <!-- <h3 class = "recipeTitle">*meal name here*</h3>
+                    <p class = "mealType">*type of food here*</p>
+                    <div class = "recipeDirection">
+                        <h4>Directions:</h4>
+                        <p>*Directions Go Here*</p>
+                        <p>*More information Here*</p>
                     </div>
+                    <div class = "recipeImage">
+                        <img src="./eatingoutAssets/spaghetti.jpg" alt = "placeholder image of bread">
+                    </div>
+                    <div class = "videoLink">
+                        <a target = "_blank" href = "#">*Cooking Tutorial*</a>
+                    </div> -->
                 </div>
-
-
-                <div class = "mealDescription">
-                    <!-- button to close recipe menu  -->
-                    <button type="button" class ="mealdescriptionButton" id="mealdescriptionButton">
-                        <i class = "search"></i>Back
-                    </button>
-
-                    <div class="recipeContent">
-                        <h3 class = "recipeHeader">*name of meal here*</h3>
-                        <p class = "category">*category*</p>
-                        <div class = "recipeDirections">
-                            <h3>Directions:</h3>
-                            <p>Placeholder</p>
-                        </div>
-                        <div class = "recipeImage">
-                            <img src = "./eatingoutAssets/spaghetti.jpg" alt = "placeholder">
-                        </div>
-                        <div class = "linkedRecipe">
-                            <a target ="_blank" href = "#">*Tutorial Video*</a>
-                        </div>
             </div>
         </div>
     </div>    

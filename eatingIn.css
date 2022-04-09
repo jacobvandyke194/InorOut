@@ -1,3 +1,30 @@
+/* stuff for JavaScript Below: */
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: goldenrod;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+
+.showRecipe{
+    display: block;
+}
+
+.mealContent{
+    margin: 36px;
+
+}
+
+.mealContent p:not(.mealType){
+    padding: 15px;
+}
+
+/* Vanilla CSS BELOW */
+
+
+
 *{
     margin: 0px;
     padding: 10px;
@@ -7,7 +34,7 @@
 }
 
 :root {
-    background-color: goldenrod;
+    background-color: darkgrey;
 }
 
 body{
@@ -25,7 +52,7 @@ button{
 }
 
 .header {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
@@ -108,12 +135,61 @@ button{
     color: goldenrod;
 }
 
+.videoLink{
+    text-decoration: none;
+    margin: 25px 0;
+    font-size: 30px;
+    color: white;
+    
+}
+.mealDescription{
+    display: none;
+    overflow-y: scroll;
+    border-radius: 100px;
+    border: 10px solid white;
+    color: white;
+    background: goldenrod;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+}
 
+.mealDescription :active{
+    display: block;
+}
+
+.closeButton {
+    font-size: 25px;
+    background: white;
+    color: black;
+    margin: 0;
+    position: relative;
+    left: 40%;
+}
+
+.mealType{
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.recipeDirection{
+    padding: 20px 0;
+}
+
+.recipeImage img{
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
 
 @media screen and (min-width: 768px){
     #recipes{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+        gap: 35px;
     }
 }
