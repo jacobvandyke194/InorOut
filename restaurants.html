@@ -33,11 +33,8 @@
             <div class="tile is-child notification is-grey-dark box">
                 <p class="title">Results</p>
                 <ul id="places"></ul>
-                <!-- <li>List</li>
-                <li>of</li>
-                <li>returned</li>
-                <li>restaurants</li> -->
-                <button id="more">Load more results</button>
+
+                <button id="more" class="button is-info">Load more results</button>
 
             </div>
         </div>
@@ -64,6 +61,8 @@
                     <label class="label">Zip Code</label>
                     <div class="control">
                         <input id = "zip" class="input" type="text" placeholder="e.g. 80219">
+                        <h3 id="lat"></h3>
+                        <h3 id="lng"></h3>
                     </div>
                 </div>
 
@@ -71,12 +70,12 @@
                     <label class="label">Distance</label>
                     <div class="control">
                         <div class="select">
-                            <select>
-                                <option>Select distance</option>
-                                <option>1 mi</option>
-                                <option>2 mi</option>
-                                <option>5 mi</option>
-                                <option>10 mi</option>
+                            <select id="radius">
+                                <option value="">Select distance</option>
+                                <option value="1500">1 mi</option>
+                                <option value="3000">2 mi</option>
+                                <option value="7500">5 mi</option>
+                                <option value="15000">10 mi</option>
                             </select>
                         </div>
                     </div>
@@ -85,7 +84,7 @@
                 <div class="field">
                     <div class="control">
                         <label class="checkbox">
-                            <input type="checkbox">
+                            <input id="checkbox" type="checkbox">
                             Only find restaurants open now?</a>
                         </label>
                     </div>
@@ -94,7 +93,7 @@
 
             </section>
             <footer class="modal-card-foot">
-                <button class="button is-success">Save changes</button>
+                <button class="button is-success" onclick="formHandler();getResults()">Submit</button>
                 <button class="button">Cancel</button>
             </footer>
         </div>
@@ -107,10 +106,10 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./restaurants.js"></script>
 
-<script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI3NxF4qGonUrluR6Ui1jFSRvMoILAy8s&libraries=places&callback=initMap">
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI3NxF4qGonUrluR6Ui1jFSRvMoILAy8s&libraries=places&callback=initMap">
 </script>
 
 
